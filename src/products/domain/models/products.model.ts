@@ -3,6 +3,7 @@ export interface ProductModel {
   name: string
   description: string
   price: number
+  quantity: number
   size?: string //P, L, XL ...
   number?: number //e. g. 42
   width: number
@@ -12,7 +13,7 @@ export interface ProductModel {
   brand?: string
   model?: string
   color?: string
-  categories: string []
+  categorie: string
   photos?: string []
   publisher?: string
   created_at?: Date

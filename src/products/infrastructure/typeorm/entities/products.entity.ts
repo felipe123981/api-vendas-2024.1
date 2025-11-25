@@ -1,4 +1,4 @@
-import { ProductModel } from "@/products/domain/model/products.model";
+import { ProductModel } from "@/products/domain/models/products.model";
 import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity('products')
@@ -44,7 +44,7 @@ export class Product implements ProductModel {
   color?: string;
 
   @Column('varchar', { array: true })
-  categories: string[];
+  categorie: string;
 
   @Column('varchar', { array: true, nullable: true })
   photos: string[];

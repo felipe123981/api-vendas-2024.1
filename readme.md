@@ -53,6 +53,16 @@ O projeto inicial contém apenas o arquivo `server.ts` com o um `console.log`. E
 npm run dev
 ```
 
+### Executando migrações
+```shell
+typeorm -- -d ./src/common/infrastructure/typeorm/index.ts migration:run
+```
+
+### Executando testes unitários
+```shell
+npm run test -- in-memory.repository
+```
+
 **Partiu curso!**
 
 

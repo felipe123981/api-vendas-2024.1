@@ -97,8 +97,8 @@ export class CreateProducts1763444118773 implements MigrationInterface {
             isNullable: false,
           },
           {
-            name: 'categories',
-            type: 'varchar []',
+            name: 'categorie',
+            type: 'varchar',
             isNullable: false,
           },
           {
