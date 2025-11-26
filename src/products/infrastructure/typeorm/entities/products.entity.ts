@@ -13,8 +13,11 @@ export class Product implements ProductModel {
   @Column()
   description: string;
 
-  @Column('int')
+  @Column('decimal')
   price: number;
+
+  @Column('int')
+  quantity: number;
 
   @Column({ nullable: true })
   size?: string;
@@ -43,7 +46,7 @@ export class Product implements ProductModel {
   @Column({ nullable: true })
   color?: string;
 
-  @Column('varchar', { array: true })
+  @Column('varchar')
   categorie: string;
 
   @Column('varchar', { array: true, nullable: true })

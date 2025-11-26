@@ -63,6 +63,11 @@ typeorm -- -d ./src/common/infrastructure/typeorm/index.ts migration:run
 npm run test -- in-memory.repository
 ```
 
+### Executando testes de integração
+```shell
+npm run test:int -- products-typeorm.repository
+```
+
 **Partiu curso!**
 
 

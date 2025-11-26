@@ -1,12 +1,13 @@
-import { pathsToModuleNameMapper } from 'ts-jest';
-import { compilerOptions } from './tsconfig.json';
+import { pathsToModuleNameMapper } from 'ts-jest'
+import { compilerOptions } from './tsconfig.json'
 
 export default {
   moduleFileExtensions: ['ts', 'js', 'json'],
   moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
     prefix: '<rootDir>/',
   }),
-  testRegex: '.*\\.spec\\.ts$',
+   testTimeout: 300000, // Aumenta o timeout para 3000 segundos
+  testRegex: '.*\\.int-spec\\.ts$',
   transform: {
     '^.+\\.(t|j)s$': ['ts-jest', {
       // Opcional: se quiser garantir que ts-jest processe módulos ESM corretamente
