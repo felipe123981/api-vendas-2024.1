@@ -40,9 +40,27 @@ npm ci
 4. Criar o arquivo de variaveis de ambiente `.env` na pasta raiz do projeto, incluindo o conteúdo a seguir:
 
 ```shell
-# Application
 PORT=3333
+NODE_ENV=development
 API_URL=http://localhost:3333
+
+# Database
+DB_TYPE=postgres
+DB_HOST=localhost
+DB_PORT=5432 # 5433 para testes de integração
+DB_SCHEMA=public
+DB_NAME=postgres
+DB_USER=postgres
+DB_PASS=postgres
+JWT_SECRET=my_secret
+JWT_EXPIRES_IN=86400
+
+# Upload com Cloudflare/Amazon S3
+CLOUDFLARE_ACCOUNT_ID=
+CLOUDFLARE_R2_URL=
+AWS_BUCKET_NAME=
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
 ```
 
 ### Executando o projeto em seu PC
